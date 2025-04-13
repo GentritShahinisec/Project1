@@ -12,7 +12,7 @@ class ExpensController extends Controller
      */
     public function index()
     {
-        //
+        dd(1);
     }
 
     /**

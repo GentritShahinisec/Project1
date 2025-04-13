@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Api\ExpensController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -9,4 +8,4 @@ Route::get('/', function () {
 
 // qetu i krijon routat
 
-Route::get('/dashboard', ExpensController::class, 'index')->name('dashboard');
+Route::get('/dashboard', 'App\Http\Controllers\Api\ExpensController@index')->name('dashboard');
